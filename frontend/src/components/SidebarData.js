@@ -2,8 +2,9 @@ import React from 'react';
 // import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import {FaCrown  } from "react-icons/fa";
 // import LoginIcon from '@mui/icons-material/Login';
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import ContentPasteIcon from '@mui/icons-material/ContentPaste';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
@@ -29,7 +30,7 @@ export const SidebarData = [
   {
     title: 'Hall of Fame',
     path: '/placements',
-    icon:<Icon icon="mdi:crown" />,
+    icon:<FaCrown/>,
     cName: 'nav-text'
   },
   {
