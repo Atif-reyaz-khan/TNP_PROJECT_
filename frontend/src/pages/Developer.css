@@ -1,0 +1,81 @@
+/* app header 
+   background-color
+*/
+.TeamDeveloper {
+  width: 100%;
+  height:100%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header-Developer {
+
+  min-height: 70vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+
+
+}
+
+.App-link {
+
+}
+@media only screen and (max-width: 1075px) { 
+  .App-header-Developer {
+    grid-template-columns: auto auto  ;
+  }
+  .headingDeveloper{
+    text-align: center;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .App-header-Developer {
+    grid-template-columns: auto ;
+  }
+  .headingDeveloper{
+    text-align: center;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.headingDeveloper{
+  color: black;
+  font-size: 25px;
+  font-family: Arial;
+  padding: 20px 0px;
+  margin-left: 9%;
+}
+
+.mainDeveloper{
+  background-color:rgba(204, 226, 207, 0.508);
+  min-height: 655px;
+}
