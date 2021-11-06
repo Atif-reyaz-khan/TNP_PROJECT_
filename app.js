@@ -29,9 +29,7 @@ mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 
    if(process.env.NODE_ENV === 'production'){
     app.use(express.static('frontend/build'));
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
-    });
+
    }
 
   
@@ -52,4 +50,4 @@ app.use('/login',loginRouter);
 app.use('/reset',resetRouter);
 app.use('/placement',placementRouter);
 app.use('/admin',adminRouter);
-// app.get('/', (req, res) => res.send('Home Page'));
+app.get('*', (req, res) => res.sendFile(__dirname+'/frontend/build/index.html'));
