@@ -190,7 +190,7 @@ const[user,setUser]=useState('');
     useEffect(() => {
       setalert(token);
 
-      axios.get("http://localhost:9000/interviews")
+      axios.get("/interviews")
   
   
         .then((res) => {
