@@ -211,7 +211,7 @@ return unique;
       <div>
        { showExp? (<div className="subHome">
 
-        <h4 className='stats'>Placements Stats</h4>
+        <h4 className='stats'>Placement Stats</h4>
 
 
 
